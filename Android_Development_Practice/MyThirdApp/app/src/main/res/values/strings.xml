@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MyThirdApp</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- For button -->
+    <string name="button">SEND MESSAGE</string>
+    <string name="title_activity_receive_message">ReceiveMessage</string>
+</resources>
