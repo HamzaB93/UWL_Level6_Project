@@ -10,10 +10,10 @@
 
     <!-- Entries for Spinner -->
     <string-array name="module_types">
-        <item>MAD</item>
-        <item>OOP</item>
-        <item>IT</item>
-        <item>LAB</item>
+        <item>Computer Science</item>
+        <item>Creative Computing</item>
+        <item>Mobile Computing</item>
+        <item>Accounting and Finance</item>
     </string-array>
 
 </resources>

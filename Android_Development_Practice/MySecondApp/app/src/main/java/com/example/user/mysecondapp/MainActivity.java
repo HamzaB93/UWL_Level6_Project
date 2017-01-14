@@ -11,6 +11,8 @@ import android.view.MenuItem;
 import android.widget.Spinner;
 import android.widget.TextView;
 
+import java.util.List;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -43,18 +45,31 @@ public class MainActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
+    private ModuleInfo info = new ModuleInfo();
+
     // Call when button is clicked
     public void onClickFindModule(View view) {
         // Get reference to TextView
-        TextView module = (TextView) findViewById(R.id.textView);
+        TextView description = (TextView) findViewById(R.id.textView);
 
         // Get reference to Spinner
-        Spinner spinner = (Spinner) findViewById(R.id.spinner);
+        Spinner courseName = (Spinner) findViewById(R.id.spinner);
 
         // Get the selected item from the spinner
-        String moduleType = String.valueOf(spinner.getSelectedItem());
+        String course = String.valueOf(courseName.getSelectedItem());
 
         // Display spinner item in textview
-        module.setText(moduleType);
+        //description.setText(course);
+
+        // Get recomendation from the ModuleInfo Class - giving it string from spinner
+        List<String> courseList = info.getCourses(course);
+
+        StringBuilder typesFormatted = new StringBuilder();
+        for(String brand : courseList) {
+            typesFormatted.append(brand).append('\n');
+        }
+
+        // Display course info
+        description.setText(typesFormatted);
     }
 }
