@@ -8,6 +8,8 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Spinner;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -39,5 +41,20 @@ public class MainActivity extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    // Call when button is clicked
+    public void onClickFindModule(View view) {
+        // Get reference to TextView
+        TextView module = (TextView) findViewById(R.id.textView);
+
+        // Get reference to Spinner
+        Spinner spinner = (Spinner) findViewById(R.id.spinner);
+
+        // Get the selected item from the spinner
+        String moduleType = String.valueOf(spinner.getSelectedItem());
+
+        // Display spinner item in textview
+        module.setText(moduleType);
     }
 }
