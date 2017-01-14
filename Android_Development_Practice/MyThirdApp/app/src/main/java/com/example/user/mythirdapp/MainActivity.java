@@ -9,6 +9,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -44,8 +45,16 @@ public class MainActivity extends AppCompatActivity {
 
     // onSendMessage
     public void onSendMessage(View view) {
+
+        // Get reference from EditText and retrieve the message string
+        EditText messageView = (EditText) findViewById(R.id.message);
+        String messageText = messageView.getText().toString();
+
         // Our Intent to do something with ReceiveMessage class as target
         Intent intent = new Intent(this, ReceiveMessage.class);
+
+        // Add the text to the intent using EXTRA_MESSAGE with the variable of the intent
+        intent.putExtra(ReceiveMessage.EXTRA_MESSAGE, messageText);
         startActivity(intent);
     }
 }

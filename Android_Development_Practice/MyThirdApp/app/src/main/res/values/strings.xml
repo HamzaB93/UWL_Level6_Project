@@ -5,4 +5,8 @@
     <!-- For button -->
     <string name="button">SEND MESSAGE</string>
     <string name="title_activity_receive_message">ReceiveMessage</string>
+
+
+    <!-- Strings for ReceiveMessage activity -->
+    <string name="hello_world">Hello World!</string>
 </resources>
