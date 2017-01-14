@@ -50,11 +50,17 @@ public class MainActivity extends AppCompatActivity {
         EditText messageView = (EditText) findViewById(R.id.message);
         String messageText = messageView.getText().toString();
 
-        // Our Intent to do something with ReceiveMessage class as target
-        Intent intent = new Intent(this, ReceiveMessage.class);
+//        // Our Intent to do something with ReceiveMessage class as target
+//        Intent intent = new Intent(this, ReceiveMessage.class);
+//        // Add the text to the intent using EXTRA_MESSAGE with the variable of the intent
+//        intent.putExtra(ReceiveMessage.EXTRA_MESSAGE, messageText);
 
-        // Add the text to the intent using EXTRA_MESSAGE with the variable of the intent
-        intent.putExtra(ReceiveMessage.EXTRA_MESSAGE, messageText);
+        // Intent changed to use action
+        // Inestead of intent to open activity, using intent to use an action
+        Intent intent =  new Intent(Intent.ACTION_SEND);
+        intent.setType("text/plain");
+        intent.putExtra(Intent.EXTRA_TEXT, messageText);
+
         startActivity(intent);
     }
 }
