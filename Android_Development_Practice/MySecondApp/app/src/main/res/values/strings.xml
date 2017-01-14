@@ -7,4 +7,13 @@
 
     <!-- Button -->
     <string name="find_module">FIND MODULE!</string>
+
+    <!-- Entries for Spinner -->
+    <string-array name="module_types">
+        <item>MAD</item>
+        <item>OOP</item>
+        <item>IT</item>
+        <item>LAB</item>
+    </string-array>
+
 </resources>
