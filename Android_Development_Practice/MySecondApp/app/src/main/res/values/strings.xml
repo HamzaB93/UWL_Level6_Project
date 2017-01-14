@@ -1,4 +1,10 @@
 <resources>
     <string name="app_name">MySecondApp</string>
     <string name="action_settings">Settings</string>
+
+    <!-- TextView -->
+    <string name="modules">Temp</string>
+
+    <!-- Button -->
+    <string name="find_module">FIND MODULE!</string>
 </resources>
