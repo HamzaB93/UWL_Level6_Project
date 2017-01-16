@@ -24,6 +24,11 @@ public class MainActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+        if(savedInstanceState != null) {
+            // retrieve seconds and running value from the bundle
+            seconds = savedInstanceState.getInt("seconds");
+            running = savedInstanceState.getBoolean("running");
+        }
         //Start the runTimer() method when the activity is created
         runTimer();
     }
@@ -75,9 +80,13 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-
-
-
+    @Override
+    // Method gets called before the activity is destroyed
+    // can save values that will be used when the onCreate() is used again
+    public void onSaveInstanceState(Bundle savedInstanceState) {
+        savedInstanceState.putInt("seconds" ,seconds);
+        savedInstanceState.putBoolean("running" ,running);
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
