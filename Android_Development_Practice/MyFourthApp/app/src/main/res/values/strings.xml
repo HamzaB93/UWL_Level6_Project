@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">MyFourthApp</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- String for the timer-->
+    <string name="time_text">TIME</string>
+    <string name="start">Start</string>
+    <string name="stop">Stop</string>
+    <string name="reset">Reset</string>
+</resources>
