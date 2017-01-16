@@ -16,6 +16,7 @@ public class MainActivity extends AppCompatActivity {
     // Record the number of seconds passed and whether the stopwatch is running
     private int seconds = 0;
     private boolean running;
+    private boolean wasRunning;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +29,8 @@ public class MainActivity extends AppCompatActivity {
             // retrieve seconds and running value from the bundle
             seconds = savedInstanceState.getInt("seconds");
             running = savedInstanceState.getBoolean("running");
+            //pass the running variable state
+            wasRunning = savedInstanceState.getBoolean("wasRunning");
         }
         //Start the runTimer() method when the activity is created
         runTimer();
@@ -86,7 +89,29 @@ public class MainActivity extends AppCompatActivity {
     public void onSaveInstanceState(Bundle savedInstanceState) {
         savedInstanceState.putInt("seconds" ,seconds);
         savedInstanceState.putBoolean("running" ,running);
+        savedInstanceState.putBoolean("wasRunning" ,wasRunning);
     }
+
+    // onStop() method will stop the app running when it is not visible
+    protected void onStop() {
+        // Must override Android lifecycle method, must call ours as super
+        super.onStop();
+
+        // record whether the stopwatch was running
+        wasRunning = running;
+        running = false;
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+
+        // Using new boolean to see if the stopwatch was running before onStop was called
+        if(wasRunning) {
+            running = true;
+        }
+    }
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
