@@ -1,6 +1,6 @@
 package com.example.user.workout;
 
-
+import android.app.Activity;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.ListFragment;
@@ -8,6 +8,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.ListView;
 import android.widget.TextView;
 
 public class WorkoutListFragment extends ListFragment {
@@ -17,6 +18,11 @@ public class WorkoutListFragment extends ListFragment {
         // Required empty public constructor
     }
 
+    // Waiting for clicks
+    static interface WorkoutListListener {
+        void itemClicked(long id);
+    };
+    private WorkoutListListener listener;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -33,5 +39,20 @@ public class WorkoutListFragment extends ListFragment {
         setListAdapter(adapter);
 
         return super.onCreateView(inflater, container, savedInstanceState);
+    }
+
+    // Gets called when fragment gets attached to an activity
+    @Override
+    public void onAttach(Activity activity) {
+        super.onAttach(activity);
+        this.listener = (WorkoutListListener)activity;
+    }
+
+    // tells listener when item is clicked
+    @Override
+    public void onListItemClick(ListView l, View v, int position, long id) {
+        if (listener != null) {
+            listener.itemClicked(id);
+        }
     }
 }
