@@ -17,6 +17,14 @@
     <fragment
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:name="com.example.user.workout.WorkoutListFragment"
+        android:id="@+id/list_frag"/>
+
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
         android:name="com.example.user.workout.WorkoutDetailFragment"
         android:id="@+id/detail_frag" />
 
