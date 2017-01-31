@@ -19,5 +19,5 @@
         android:layout_height="wrap_content"
         android:name="com.example.user.workout.WorkoutDetailFragment"
         android:id="@+id/detail_frag" />
-    
+
 </LinearLayout>

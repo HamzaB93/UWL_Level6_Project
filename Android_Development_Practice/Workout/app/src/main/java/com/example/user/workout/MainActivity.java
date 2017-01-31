@@ -8,7 +8,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.app.Fragment;
+import android.support.v4.app.Fragment;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -16,11 +16,9 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
-        
         WorkoutDetailFragment frag = (WorkoutDetailFragment)
-                getFragmentManager().findFragmentById(R.id.detail_frag);
+                getSupportFragmentManager().findFragmentById(R.id.detail_frag);
+        frag.setWorkoutId(0);
     }
 
     @Override
