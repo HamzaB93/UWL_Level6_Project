@@ -2,15 +2,21 @@
     <string name="app_name">NativeProjectApp</string>
     <string name="action_settings">Settings</string>
 
+
+    <!-- Main menu strings -->
     <string name="welcome">This app provides a variety of options that will stress the hardware
     of your device. Please select from below.</string>
 
     <string-array name="options">
-        <item>Test1</item>
+        <item>Image test</item>
         <item>Test2</item>
         <item>Test3</item>
         <item>Test4</item>
         <item>Test5</item>
     </string-array>
+
+    <!-- ImageTest activity strings -->
+    <string name="title_activity_image_test">ImageTestActivity</string>
+    <string name="image_welcome">Here we will do some funky stuff with an image</string>
 
 </resources>
