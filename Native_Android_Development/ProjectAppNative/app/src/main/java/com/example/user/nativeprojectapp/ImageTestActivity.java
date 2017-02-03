@@ -6,6 +6,7 @@ import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
+import android.widget.ImageView;
 
 public class ImageTestActivity extends AppCompatActivity {
 
@@ -16,4 +17,21 @@ public class ImageTestActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
     }
+
+    public void onClickImageTest(View view) {
+        // Reference images
+        ImageView and1 = (ImageView) findViewById(R.id.android_image);
+        ImageView and2 = (ImageView) findViewById(R.id.android_image2);
+        ImageView and3 = (ImageView) findViewById(R.id.android_image3);
+        ImageView and4 = (ImageView) findViewById(R.id.android_image4);
+        ImageView and5 = (ImageView) findViewById(R.id.android_image5);
+        ImageView and6 = (ImageView) findViewById(R.id.android_image6);
+
+        if(and1.getVisibility() == View.VISIBLE) {
+            and1.setVisibility(View.INVISIBLE);
+        }
+
+
+    }
+
 }

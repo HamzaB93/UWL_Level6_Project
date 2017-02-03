@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/content_image_test"
@@ -11,8 +11,7 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.example.user.nativeprojectapp.ImageTestActivity"
-    tools:showIn="@layout/activity_image_test"
-    android:orientation="vertical">
+    tools:showIn="@layout/activity_image_test">
 
     <TextView
         android:layout_width="match_parent"
@@ -20,4 +19,73 @@
         android:text="@string/image_welcome"
         android:id="@+id/image_welcome"/>
 
-</LinearLayout>
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@mipmap/ic_launcher"
+        android:id="@+id/android_image2"
+        android:layout_alignTop="@+id/android_image"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="64dp"
+        android:visibility="visible"/>
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@mipmap/ic_launcher"
+        android:layout_marginTop="25dp"
+        android:id="@+id/android_image"
+        android:layout_marginEnd="39dp"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@+id/android_image2"
+        android:visibility="visible"/>
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@mipmap/ic_launcher"
+        android:id="@+id/android_image3"
+        android:layout_marginTop="35dp"
+        android:layout_below="@+id/android_image"
+        android:layout_alignStart="@+id/android_image"
+        android:visibility="visible"/>
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@mipmap/ic_launcher"
+        android:id="@+id/android_image5"
+        android:layout_below="@+id/android_image3"
+        android:layout_alignStart="@+id/android_image3"
+        android:layout_marginTop="31dp"
+        android:visibility="visible"/>
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@mipmap/ic_launcher"
+        android:id="@+id/android_image4"
+        android:layout_alignTop="@+id/android_image3"
+        android:layout_alignStart="@+id/android_image2"
+        android:visibility="visible"/>
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@mipmap/ic_launcher"
+        android:id="@+id/android_image6"
+        android:layout_alignTop="@+id/android_image5"
+        android:layout_alignStart="@+id/android_image4"
+        android:visibility="visible"/>
+
+    <Button
+        android:text="@string/image_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="17dp"
+        android:id="@+id/image_button"
+        android:onClick="onClickImageTest"/>
+
+</RelativeLayout>
