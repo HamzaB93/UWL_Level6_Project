@@ -1,6 +1,7 @@
 package com.example.user.nativeprojectapp;
 
 import android.os.Bundle;
+import android.os.Handler;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
@@ -9,6 +10,8 @@ import android.view.View;
 import android.widget.ImageView;
 
 public class ImageTestActivity extends AppCompatActivity {
+
+    private int count = 3;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,19 +23,33 @@ public class ImageTestActivity extends AppCompatActivity {
 
     public void onClickImageTest(View view) {
         // Reference images
-        ImageView and1 = (ImageView) findViewById(R.id.android_image);
-        ImageView and2 = (ImageView) findViewById(R.id.android_image2);
-        ImageView and3 = (ImageView) findViewById(R.id.android_image3);
-        ImageView and4 = (ImageView) findViewById(R.id.android_image4);
-        ImageView and5 = (ImageView) findViewById(R.id.android_image5);
-        ImageView and6 = (ImageView) findViewById(R.id.android_image6);
+        final ImageView and1 = (ImageView) findViewById(R.id.android_image);
+        final ImageView and2 = (ImageView) findViewById(R.id.android_image2);
+        final ImageView and3 = (ImageView) findViewById(R.id.android_image3);
+        final ImageView and4 = (ImageView) findViewById(R.id.android_image4);
+        final ImageView and5 = (ImageView) findViewById(R.id.android_image5);
+        final ImageView and6 = (ImageView) findViewById(R.id.android_image6);
 
-        if (and1.getVisibility() == View.VISIBLE) {
-            makeImageInvisible(and1, and2, and3, and4, and5, and6);
-        }
-        else if (and1.getVisibility() == View.INVISIBLE) {
-            makeImageVisible(and1, and2, and3, and4, and5, and6);
-        }
+        
+        makeImageInvisible(and1, and2, and3, and4, and5, and6);
+        final Handler handler = new Handler();
+        handler.postDelayed(new Runnable() {
+            @Override
+            public void run(){
+                makeImageVisible(and1, and2, and3, and4, and5, and6);
+            }
+        }, 1000);
+
+
+//        if (and1.getVisibility() == View.VISIBLE) {
+//            makeImageInvisible(and1, and2, and3, and4, and5, and6);
+//        } else if (and1.getVisibility() == View.INVISIBLE) {
+//            makeImageVisible(and1, and2, and3, and4, and5, and6);
+//        }
+
+
+
+
 
 
 //        if (and1.getVisibility() == View.VISIBLE) {
