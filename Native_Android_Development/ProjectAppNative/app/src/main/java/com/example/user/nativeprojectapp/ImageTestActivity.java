@@ -28,23 +28,51 @@ public class ImageTestActivity extends AppCompatActivity {
         ImageView and6 = (ImageView) findViewById(R.id.android_image6);
 
         if (and1.getVisibility() == View.VISIBLE) {
-            and1.setVisibility(View.INVISIBLE);
+            makeImageInvisible(and1, and2, and3, and4, and5, and6);
         }
-        if (and2.getVisibility() == View.VISIBLE) {
-            and2.setVisibility(View.INVISIBLE);
+        else if (and1.getVisibility() == View.INVISIBLE) {
+            makeImageVisible(and1, and2, and3, and4, and5, and6);
         }
-        if (and3.getVisibility() == View.VISIBLE) {
-            and3.setVisibility(View.INVISIBLE);
-        }
-        if (and4.getVisibility() == View.VISIBLE) {
-            and4.setVisibility(View.INVISIBLE);
-        }
-        if (and5.getVisibility() == View.VISIBLE) {
-            and5.setVisibility(View.INVISIBLE);
-        }
-        if (and6.getVisibility() == View.VISIBLE) {
-            and6.setVisibility(View.INVISIBLE);
-        }
+
+
+//        if (and1.getVisibility() == View.VISIBLE) {
+//            and1.setVisibility(View.INVISIBLE);
+//        }
+//        if (and2.getVisibility() == View.VISIBLE) {
+//            and2.setVisibility(View.INVISIBLE);
+//        }
+//        if (and3.getVisibility() == View.VISIBLE) {
+//            and3.setVisibility(View.INVISIBLE);
+//        }
+//        if (and4.getVisibility() == View.VISIBLE) {
+//            and4.setVisibility(View.INVISIBLE);
+//        }
+//        if (and5.getVisibility() == View.VISIBLE) {
+//            and5.setVisibility(View.INVISIBLE);
+//        }
+//        if (and6.getVisibility() == View.VISIBLE) {
+//            and6.setVisibility(View.INVISIBLE);
+//        }
+    }
+
+    public void makeImageInvisible(ImageView and1, ImageView and2, ImageView and3, ImageView and4,
+                                 ImageView and5,ImageView and6) {
+        and1.setVisibility(View.INVISIBLE);
+        and2.setVisibility(View.INVISIBLE);
+        and3.setVisibility(View.INVISIBLE);
+        and4.setVisibility(View.INVISIBLE);
+        and5.setVisibility(View.INVISIBLE);
+        and6.setVisibility(View.INVISIBLE);
+    }
+
+    public void makeImageVisible(ImageView and1, ImageView and2, ImageView and3, ImageView and4,
+                                   ImageView and5,ImageView and6) {
+        and1.setVisibility(View.VISIBLE);
+        and2.setVisibility(View.VISIBLE);
+        and3.setVisibility(View.VISIBLE);
+        and4.setVisibility(View.VISIBLE);
+        and5.setVisibility(View.VISIBLE);
+        and6.setVisibility(View.VISIBLE);
     }
 
 }
