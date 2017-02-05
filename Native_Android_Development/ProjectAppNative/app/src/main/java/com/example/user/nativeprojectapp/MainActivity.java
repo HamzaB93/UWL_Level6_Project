@@ -28,6 +28,10 @@ public class MainActivity extends AppCompatActivity {
                     Intent intent = new Intent (MainActivity.this, ImageTestActivity.class);
                     startActivity(intent);
                 }
+                if (position == 1) {
+                    Intent intent = new Intent (MainActivity.this, TimerTestActivity.class);
+                    startActivity(intent);
+                }
             }
         };
         // Referencing the list view and setting the listener above

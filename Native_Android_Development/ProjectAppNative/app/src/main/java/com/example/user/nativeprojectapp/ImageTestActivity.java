@@ -30,46 +30,15 @@ public class ImageTestActivity extends AppCompatActivity {
         final ImageView and5 = (ImageView) findViewById(R.id.android_image5);
         final ImageView and6 = (ImageView) findViewById(R.id.android_image6);
 
-        
-        makeImageInvisible(and1, and2, and3, and4, and5, and6);
         final Handler handler = new Handler();
+
+        makeImageInvisible(and1, and2, and3, and4, and5, and6);
         handler.postDelayed(new Runnable() {
-            @Override
-            public void run(){
-                makeImageVisible(and1, and2, and3, and4, and5, and6);
-            }
+        @Override
+        public void run() {
+            makeImageVisible(and1, and2, and3, and4, and5, and6);
+        }
         }, 1000);
-
-
-//        if (and1.getVisibility() == View.VISIBLE) {
-//            makeImageInvisible(and1, and2, and3, and4, and5, and6);
-//        } else if (and1.getVisibility() == View.INVISIBLE) {
-//            makeImageVisible(and1, and2, and3, and4, and5, and6);
-//        }
-
-
-
-
-
-
-//        if (and1.getVisibility() == View.VISIBLE) {
-//            and1.setVisibility(View.INVISIBLE);
-//        }
-//        if (and2.getVisibility() == View.VISIBLE) {
-//            and2.setVisibility(View.INVISIBLE);
-//        }
-//        if (and3.getVisibility() == View.VISIBLE) {
-//            and3.setVisibility(View.INVISIBLE);
-//        }
-//        if (and4.getVisibility() == View.VISIBLE) {
-//            and4.setVisibility(View.INVISIBLE);
-//        }
-//        if (and5.getVisibility() == View.VISIBLE) {
-//            and5.setVisibility(View.INVISIBLE);
-//        }
-//        if (and6.getVisibility() == View.VISIBLE) {
-//            and6.setVisibility(View.INVISIBLE);
-//        }
     }
 
     public void makeImageInvisible(ImageView and1, ImageView and2, ImageView and3, ImageView and4,
@@ -91,5 +60,4 @@ public class ImageTestActivity extends AppCompatActivity {
         and5.setVisibility(View.VISIBLE);
         and6.setVisibility(View.VISIBLE);
     }
-
 }

@@ -21,6 +21,10 @@
         <activity
             android:name=".ImageTestActivity"
             android:label="@string/title_activity_image_test"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".TimerTestActivity"
+            android:label="@string/title_activity_timer_test"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 

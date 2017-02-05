@@ -9,7 +9,7 @@
 
     <string-array name="options">
         <item>Image test</item>
-        <item>Test2</item>
+        <item>Timer test</item>
         <item>Test3</item>
         <item>Test4</item>
         <item>Test5</item>
@@ -19,5 +19,6 @@
     <string name="title_activity_image_test">ImageTestActivity</string>
     <string name="image_welcome">Here we will do some funky stuff with an image</string>
     <string name="image_button">Start</string>
+    <string name="title_activity_timer_test">TimerTestActivity</string>
 
 </resources>
