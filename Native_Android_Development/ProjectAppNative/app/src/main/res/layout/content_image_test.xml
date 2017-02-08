@@ -19,6 +19,7 @@
         android:text="@string/image_welcome"
         android:id="@+id/image_welcome"/>
 
+    <!--
     <ImageView
         android:layout_width="100dp"
         android:layout_height="100dp"
@@ -86,6 +87,6 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="17dp"
         android:id="@+id/image_button"
-        android:onClick="onClickImageTest"/>
+        android:onClick="onClickImageTest"/>   -->
 
 </RelativeLayout>
