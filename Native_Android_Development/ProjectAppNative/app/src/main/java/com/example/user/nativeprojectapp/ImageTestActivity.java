@@ -25,27 +25,30 @@ public class ImageTestActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        // Layout setup
-        LinearLayout linearLayout = new LinearLayout(this);
-        linearLayout.setOrientation(LinearLayout.VERTICAL);
 
-        linearLayout.setLayoutParams(new Toolbar.LayoutParams(Toolbar.LayoutParams.MATCH_PARENT,
-                Toolbar.LayoutParams.MATCH_PARENT));
+        for (int i = 0; i < 3 ; i ++) {
+            // Layout setup
+            LinearLayout linearLayout = new LinearLayout(this);
+            linearLayout.setOrientation(LinearLayout.VERTICAL);
 
-        // ImageView Setup
-        ImageView imageView = new ImageView(this);
+            linearLayout.setLayoutParams(new Toolbar.LayoutParams(Toolbar.LayoutParams.MATCH_PARENT,
+                    Toolbar.LayoutParams.MATCH_PARENT));
 
-        // Setting image resource
-        imageView.setImageResource(R.drawable.android_logo);
+            // ImageView Setup
+            ImageView imageView = new ImageView(this);
 
-        // set position
-        imageView.setLayoutParams(new Toolbar.LayoutParams(Toolbar.LayoutParams.MATCH_PARENT,
-                Toolbar.LayoutParams.MATCH_PARENT));
+            // Setting image resource
+            imageView.setImageResource(R.drawable.android_logo);
 
-        // adding view to layout
-        linearLayout.addView(imageView);
-        // make visible to program
-        setContentView(linearLayout);
+            // set position
+            imageView.setLayoutParams(new Toolbar.LayoutParams(Toolbar.LayoutParams.MATCH_PARENT,
+                    Toolbar.LayoutParams.MATCH_PARENT));
+
+            // adding view to layout
+            linearLayout.addView(imageView);
+            // make visible to program
+            setContentView(linearLayout);
+        }
     }
 
 
