@@ -25,6 +25,10 @@
         <activity
             android:name=".Cycle1Activity"
             android:label="@string/title_activity_cycle1"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".PreImageTestActivity"
+            android:label="@string/title_activity_pre_image_test"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 

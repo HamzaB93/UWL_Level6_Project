@@ -15,12 +15,22 @@
         <item>Test5</item>
     </string-array>
 
+    <!-- PreImageTestActivty -->
+    <string name="title_activity_pre_image_test">PreImageTestActivity</string>
+    <string name="pre_image_test">Info will go here</string>
+    <string name="image_test_start">Start!</string>
+
     <!-- ImageTest activity strings -->
     <string name="title_activity_image_test">ImageTestActivity</string>
     <string name="image_welcome">Here we will do some funky stuff with an image</string>
     <string name="image_button">Start</string>
 
+    <!-- Cycle Test-->
     <string name="title_activity_cycle1">Cycle1Activity</string>
     <string name="cycle_text">Cycling</string>
+
+
+
+
 
 </resources>

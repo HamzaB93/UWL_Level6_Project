@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
         AdapterView.OnItemClickListener clickListener = new AdapterView.OnItemClickListener() {
             public void onItemClick(AdapterView<?> listView, View v, int position, long id) {
                 if(position == 0) {
-                    Intent intent = new Intent (MainActivity.this, ImageTestActivity.class);
+                    Intent intent = new Intent (MainActivity.this, PreImageTestActivity.class);
                     startActivity(intent);
                 }
                 if (position == 1) {

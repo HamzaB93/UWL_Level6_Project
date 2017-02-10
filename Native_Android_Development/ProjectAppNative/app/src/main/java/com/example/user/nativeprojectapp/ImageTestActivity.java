@@ -1,5 +1,6 @@
 package com.example.user.nativeprojectapp;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.design.widget.FloatingActionButton;
@@ -48,6 +49,17 @@ public class ImageTestActivity extends AppCompatActivity {
             linearLayout.addView(imageView);
             // make visible to program
             setContentView(linearLayout);
+
+
+            Handler handler = new Handler();
+
+            handler.postDelayed(new Runnable() {
+                @Override
+                public void run() {
+                    Intent intent = new Intent(ImageTestActivity.this, PreImageTestActivity.class);
+                    startActivity(intent);
+            }
+            }, 3000);
         }
     }
 

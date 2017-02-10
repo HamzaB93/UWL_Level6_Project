@@ -18,16 +18,23 @@ public class Cycle1Activity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+        // Intent to be used in for loop
+        final Intent intent = new Intent(Cycle1Activity.this, Cycle1Activity.class);
+
         Handler handler = new Handler();
 
-        
         handler.postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent intent = new Intent(Cycle1Activity.this, Cycle1Activity.class);
-                startActivity(intent);
+                for (int i = 0; i < 3; i++) {
+                    startActivity(intent);
+                    finish();
+
+                }
             }
         },1000);
+
+
 //
 //        for (int i = 0 ; i < 2 ; i++) {
 //            Intent intent = new Intent (Cycle1Activity.this, Cycle1Activity.class);
