@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
                     startActivity(intent);
                 }
                 if (position == 1) {
-                    Intent intent = new Intent (MainActivity.this, Cycle1Activity.class);
+                    Intent intent = new Intent (MainActivity.this, PreCycleTestActivity.class);
                     startActivity(intent);
                 }
             }

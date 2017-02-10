@@ -9,12 +9,12 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 
-public class Cycle1Activity extends AppCompatActivity {
+public class Cycle3Activity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_cycle1);
+        setContentView(R.layout.activity_cycle3);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -23,7 +23,7 @@ public class Cycle1Activity extends AppCompatActivity {
         handler.postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent intent = new Intent(Cycle1Activity.this, Cycle2Activity.class);
+                Intent intent = new Intent(Cycle3Activity.this, Cycle4Activity.class);
                 startActivity(intent);
             }
         }, 10);

@@ -29,6 +29,26 @@
         <activity
             android:name=".PreImageTestActivity"
             android:label="@string/title_activity_pre_image_test"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".PreCycleTestActivity"
+            android:label="@string/title_activity_pre_cycle_test"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Cycle2Activity"
+            android:label="@string/title_activity_cycle2"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Cycle3Activity"
+            android:label="@string/title_activity_cycle3"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Cycle4Activity"
+            android:label="@string/title_activity_cycle4"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Cycle5Activity"
+            android:label="@string/title_activity_cycle5"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
