@@ -10,7 +10,7 @@
     <string-array name="options">
         <item>Image test</item>
         <item>Activity Cycle test</item>
-        <item>Test3</item>
+        <item>Scroll test</item>
         <item>Test4</item>
         <item>Test5</item>
     </string-array>
@@ -30,12 +30,27 @@
     <string name="pre_cycle_test">Info will go here</string>
 
     <!-- Cycle Test-->
-    <string name="title_activity_cycle1">Cycle1Activity</string>
     <string name="cycle_text">Cycling</string>
+    <string name="title_activity_cycle1">Cycle1Activity</string>
     <string name="title_activity_cycle2">Cycle2Activity</string>
     <string name="title_activity_cycle3">Cycle3Activity</string>
     <string name="title_activity_cycle4">Cycle4Activity</string>
     <string name="title_activity_cycle5">Cycle5Activity</string>
+
+
+    <!-- Pre scroll test -->
+    <string name="title_activity_pre_scroll_test">PreScrollTestActivity</string>
+
+    <!-- Scroll test -->
+    <string name="title_activity_scroll_test">ScrollTestActivity</string>
+    <string name="scroll_text">a\nb\nc\nd\ne\nf\ng\nh\ni\nj\nk\nl\nm\nn\no\np\nq\nr\ns\nt\nu\nv\nw\nx\ny\nz\n
+    a\nb\nc\nd\ne\nf\ng\nh\ni\nj\nk\nl\nm\nn\no\np\nq\nr\ns\nt\nu\nv\nw\nx\ny\nz\n
+    a\nb\nc\nd\ne\nf\ng\nh\ni\nj\nk\nl\nm\nn\no\np\nq\nr\ns\nt\nu\nv\nw\nx\ny\nz\n
+    a\nb\nc\nd\ne\nf\ng\nh\ni\nj\nk\nl\nm\nn\no\np\nq\nr\ns\nt\nu\nv\nw\nx\ny\nz\n
+    a\nb\nc\nd\ne\nf\ng\nh\ni\nj\nk\nl\nm\nn\no\np\nq\nr\ns\nt\nu\nv\nw\nx\ny\nz\n
+    a\nb\nc\nd\ne\nf\ng\nh\ni\nj\nk\nl\nm\nn\no\np\nq\nr\ns\nt\nu\nv\nw\nx\ny\nz\n
+    a\nb\nc\nd\ne\nf\ng\nh\ni\nj\nk\nl\nm\nn\no\np\nq\nr\ns\nt\nu\nv\nw\nx\ny\nz\n
+    a\nb\nc\nd\ne\nf\ng\nh\ni\nj\nk\nl\nm\nn\no\np\nq\nr\ns\nt\nu\nv\nw\nx\ny\nz\n</string>
 
 
 </resources>

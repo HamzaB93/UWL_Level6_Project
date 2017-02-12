@@ -30,6 +30,10 @@ public class MainActivity extends AppCompatActivity {
                     Intent intent = new Intent (MainActivity.this, PreCycleTestActivity.class);
                     startActivity(intent);
                 }
+                if (position == 2) {
+                    Intent intent = new Intent (MainActivity.this, PreScrollTestActivity.class);
+                    startActivity(intent);
+                }
             }
         };
         // Referencing the list view and setting the listener above
