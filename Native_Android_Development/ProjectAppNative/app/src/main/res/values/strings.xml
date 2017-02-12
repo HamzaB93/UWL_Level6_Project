@@ -11,8 +11,7 @@
         <item>Image test</item>
         <item>Activity Cycle test</item>
         <item>Scroll test</item>
-        <item>Test4</item>
-        <item>Test5</item>
+        <item>Flash Light test</item>
     </string-array>
 
     <string name="start_test_button">Start</string>
@@ -51,6 +50,8 @@
     a\nb\nc\nd\ne\nf\ng\nh\ni\nj\nk\nl\nm\nn\no\np\nq\nr\ns\nt\nu\nv\nw\nx\ny\nz\n
     a\nb\nc\nd\ne\nf\ng\nh\ni\nj\nk\nl\nm\nn\no\np\nq\nr\ns\nt\nu\nv\nw\nx\ny\nz\n
     a\nb\nc\nd\ne\nf\ng\nh\ni\nj\nk\nl\nm\nn\no\np\nq\nr\ns\nt\nu\nv\nw\nx\ny\nz\n</string>
+    <string name="title_activity_pre_flash">PreFlashActivity</string>
+    <string name="title_activity_flash_test">FlashTestActivity</string>
 
 
 </resources>

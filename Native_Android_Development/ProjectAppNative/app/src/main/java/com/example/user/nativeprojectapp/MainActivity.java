@@ -34,6 +34,10 @@ public class MainActivity extends AppCompatActivity {
                     Intent intent = new Intent (MainActivity.this, PreScrollTestActivity.class);
                     startActivity(intent);
                 }
+                if (position == 3) {
+                    Intent intent = new Intent (MainActivity.this, PreFlashTestActivity.class);
+                    startActivity(intent);
+                }
             }
         };
         // Referencing the list view and setting the listener above

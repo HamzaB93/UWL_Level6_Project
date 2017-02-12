@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.user.nativeprojectapp">
 
+    <uses-permission android:name = "android.permission.CAMERA"/>
+    <uses-feature android:name="android.hardware.FLASHLIGHT"/>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -57,7 +60,16 @@
         <activity
             android:name=".ScrollTestActivity"
             android:label="@string/title_activity_scroll_test"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".PreFlashTestActivity"
+            android:label="@string/title_activity_pre_flash"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".FlashTestActivity"
+            android:label="@string/title_activity_flash_test"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
     </application>
 
 </manifest>
