@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <!-- Renders all the items in item list -->
+    <!-- When click call itemselected and use the item clicked -->
+    <button ion-item *ngFor="let item of items" (click)="itemSelected(item)">
+      <!-- Telling template to render text -->
+      {{ item.text }}
+    </button>
+  </ion-list>
+</ion-content>
