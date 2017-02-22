@@ -2,6 +2,9 @@ import { Component } from '@angular/core';
 
 import { NavController } from 'ionic-angular';
 
+// Imported the second page so we can navigate to it
+import { PreImageTestPage } from '../pre-image-test/pre-image'
+
 @Component({
   selector: 'page-home',
   templateUrl: 'home.html'
