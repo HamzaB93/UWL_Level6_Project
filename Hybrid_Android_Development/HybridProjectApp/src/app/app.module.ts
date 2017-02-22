@@ -3,7 +3,7 @@ import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 // Imported second page
-import { PreImageTestPage } from '../pages/pre-image-test/pre-image'
+import { PreImageTestPage } from '../pages/pre-image-test/pre-image-test';
 
 @NgModule({
   declarations: [
