@@ -28,9 +28,14 @@ export class HomePage {
   // For the clicks in the list
   itemSelected(item){
     // Push used to push an instance of detail page on to navigation stack
-    this.navCtrl.push(DetailPage, {
-      item: item
-    });
+
+    if (item == 0){
+      this.navCtrl.push(DetailPage);
+    }
+
+      //this.navCtrl.push(DetailPage, {
+      //  item: item
+      //  });
 
   }
 
