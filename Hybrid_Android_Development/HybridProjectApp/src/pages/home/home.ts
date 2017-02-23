@@ -2,8 +2,9 @@ import { Component } from '@angular/core';
 
 import { NavController } from 'ionic-angular';
 
-// Imported the second page so we can navigate to it
+// Imported pages
 import { PreImageTestPage } from '../pre-image-test/pre-image-test';
+import { PreActivityTestPage } from '../pre-activity-test/pre-activity-test';
 
 @Component({
   selector: 'page-home',
@@ -25,6 +26,9 @@ options: any;
     navigate(i) {
       if(i == 0){
         this.navCtrl.push(PreImageTestPage);
+      }
+      else if(i == 1){
+        this.navCtrl.push(PreActivityTestPage);
       }
   }
 }
