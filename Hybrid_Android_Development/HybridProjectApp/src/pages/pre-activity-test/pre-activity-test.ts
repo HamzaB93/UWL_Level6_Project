@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
-import { ActivityTestPage } from '../activity-test/activity-test';
+import { Cycle1ActivityPage } from '../cycle1-activity/cycle1-activity';
 
 /*
   Generated class for the PreActivityTest page.
@@ -21,7 +21,7 @@ export class PreActivityTestPage {
   }
 
   startActivityTest(){
-    this.navCtrl.push(ActivityTestPage);
+    this.navCtrl.push(Cycle1ActivityPage);
   }
 
 }
