@@ -1,27 +1,22 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
-import { ImageTestPage } from '../image-test/image-test';
 
 /*
-  Generated class for the PreImageTest page.
+  Generated class for the ImageTest page.
 
   See http://ionicframework.com/docs/v2/components/#navigation for more info on
   Ionic pages and navigation.
 */
 @Component({
-  selector: 'page-pre-image-test',
-  templateUrl: 'pre-image-test.html'
+  selector: 'page-image-test',
+  templateUrl: 'image-test.html'
 })
-export class PreImageTestPage {
+export class ImageTestPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {}
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad PreImageTestPage');
-  }
-
-  startImageTest(){
-    this.navCtrl.push(ImageTestPage);
+    console.log('ionViewDidLoad ImageTestPage');
   }
 
 }

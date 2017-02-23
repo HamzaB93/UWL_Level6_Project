@@ -2,14 +2,16 @@ import { NgModule, ErrorHandler } from '@angular/core';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
-// Imported second page
+// Imported pages
 import { PreImageTestPage } from '../pages/pre-image-test/pre-image-test';
+import { ImageTestPage } from '../pages/image-test/image-test';
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
-    PreImageTestPage
+    PreImageTestPage,
+    ImageTestPage
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -18,7 +20,8 @@ import { PreImageTestPage } from '../pages/pre-image-test/pre-image-test';
   entryComponents: [
     MyApp,
     HomePage,
-    PreImageTestPage
+    PreImageTestPage,
+    ImageTestPage
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]
 })
