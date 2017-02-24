@@ -13,11 +13,19 @@ import { NavController, NavParams } from 'ionic-angular';
 })
 export class ImageTestPage {
 
+  androidIm = new Image();
+
   //androidImg = document.getElementById("androidImage") as HTMLImageElement;
 
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
     //androidImg.src = "assets/img/android_logo";
+
+    this.androidIm.useMap="img/android_logo.png";
+    var img = document.createElement('img');
+    img.setAttribute('src', this.androidIm.useMap);
+    img.setAttribute('style', "height:300px;width:200px");
+    document.body.appendChild(img);
   }
 
   ionViewDidLoad() {
