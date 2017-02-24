@@ -13,7 +13,12 @@ import { NavController, NavParams } from 'ionic-angular';
 })
 export class ImageTestPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {}
+  //androidImg = document.getElementById("androidImage") as HTMLImageElement;
+
+
+  constructor(public navCtrl: NavController, public navParams: NavParams) {
+    //androidImg.src = "assets/img/android_logo";
+  }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad ImageTestPage');
