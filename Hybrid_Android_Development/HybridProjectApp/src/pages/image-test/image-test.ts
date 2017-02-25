@@ -13,11 +13,8 @@ import { NavController, NavParams } from 'ionic-angular';
 })
 export class ImageTestPage {
 
-  androidIm : any;
-
   //androidImg = document.getElementById("androidImage") as HTMLImageElement;
-
-
+  document: any;
   constructor(public navCtrl: NavController, public navParams: NavParams) {
     //androidImg.src = "assets/img/android_logo";
 
@@ -26,10 +23,14 @@ export class ImageTestPage {
     // img.setAttribute('src', this.androidIm.useMap);
     // img.setAttribute('style', "height:300px;width:200px");
     // document.body.appendChild(img);
-    this.androidIm = document.getElementById("androidLogo") as HTMLImageElement;
-    this.androidIm.src="data:assets/img/android_logo.png";
+    // this.androidIm = document.getElementById("androidLogo") as HTMLImageElement;
+    // this.androidIm.src="data:assets/img/android_logo.png";
 
 
+  }
+
+  loadImage() {
+      this.document.getElementById( "androidLogo" ).src = "assets/img/android_logo.png";      
   }
 
   ionViewDidLoad() {
