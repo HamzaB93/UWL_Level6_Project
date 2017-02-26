@@ -25,12 +25,13 @@ export class ImageTestPage {
     // document.body.appendChild(img);
     // this.androidIm = document.getElementById("androidLogo") as HTMLImageElement;
     // this.androidIm.src="data:assets/img/android_logo.png";
-
-
+    
   }
 
   loadImage() {
-      this.document.getElementById( "androidLogo" ).src = "assets/img/android_logo.png";      
+    for(var i = 0; i < 2; i++){
+      this.document.getElementById( "androidLogo" ).src = "assets/img/android_logo.png";
+    }
   }
 
   ionViewDidLoad() {
