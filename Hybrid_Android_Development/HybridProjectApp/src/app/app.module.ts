@@ -14,6 +14,8 @@ import { Cycle3ActivityPage } from '../pages/cycle3-activity/cycle3-activity';
 import { Cycle4ActivityPage } from '../pages/cycle4-activity/cycle4-activity';
 import { Cycle5ActivityPage } from '../pages/cycle5-activity/cycle5-activity';
 
+import { PreVideoTestPage } from '../pages/pre-video-test/pre-video-test';
+
 
 @NgModule({
   declarations: [
@@ -26,7 +28,8 @@ import { Cycle5ActivityPage } from '../pages/cycle5-activity/cycle5-activity';
     Cycle2ActivityPage,
     Cycle3ActivityPage,
     Cycle4ActivityPage,
-    Cycle5ActivityPage
+    Cycle5ActivityPage,
+    PreVideoTestPage
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -42,7 +45,8 @@ import { Cycle5ActivityPage } from '../pages/cycle5-activity/cycle5-activity';
     Cycle2ActivityPage,
     Cycle3ActivityPage,
     Cycle4ActivityPage,
-    Cycle5ActivityPage
+    Cycle5ActivityPage,
+    PreVideoTestPage
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]
 })

@@ -5,6 +5,7 @@ import { NavController } from 'ionic-angular';
 // Imported pages
 import { PreImageTestPage } from '../pre-image-test/pre-image-test';
 import { PreActivityTestPage } from '../pre-activity-test/pre-activity-test';
+import { PreVideoTestPage } from '../pre-video-test/pre-video-test';
 
 @Component({
   selector: 'page-home',
@@ -20,6 +21,7 @@ options: any;
     this.options = [
       {name: "Image test", id: 1},
       {name: "Activity Cycle test ", id: 2},
+      {name: "Video test", id: 3},
     ];
     }
 
@@ -29,6 +31,9 @@ options: any;
       }
       else if(i == 1){
         this.navCtrl.push(PreActivityTestPage);
+      }
+      else if(i == 2){
+        this.navCtrl.push(PreVideoTestPage);
       }
   }
 }
