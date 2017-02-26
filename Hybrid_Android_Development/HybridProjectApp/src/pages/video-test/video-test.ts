@@ -1,27 +1,22 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 
-import { VideoTestPage } from '../video-test/video-test';
-
 /*
-  Generated class for the PreVideoTest page.
+  Generated class for the VideoTest page.
 
   See http://ionicframework.com/docs/v2/components/#navigation for more info on
   Ionic pages and navigation.
 */
 @Component({
-  selector: 'page-pre-video-test',
-  templateUrl: 'pre-video-test.html'
+  selector: 'page-video-test',
+  templateUrl: 'video-test.html'
 })
-export class PreVideoTestPage {
+export class VideoTestPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {}
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad PreVideoTestPage');
+    console.log('ionViewDidLoad VideoTestPage');
   }
 
-  startVideoTest() {
-    this.navCtrl.push(VideoTestPage);
-  }
 }
