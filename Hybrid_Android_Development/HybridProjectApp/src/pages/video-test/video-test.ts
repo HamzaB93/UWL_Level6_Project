@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
-import { VideoPlayer } from 'ionic-native';
 
 /*
   Generated class for the VideoTest page.
@@ -14,18 +13,7 @@ import { VideoPlayer } from 'ionic-native';
 })
 export class VideoTestPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
-
-  }
-
-  playTrailer(){
-    // Playing a video.
-    VideoPlayer.play("src/assets/vid/guardians.mp4").then(() => {
-      console.log('video completed');
-      }).catch(err => {
-        console.log(err);
-    });
-  }
+  constructor(public navCtrl: NavController, public navParams: NavParams) {}
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad VideoTestPage');
