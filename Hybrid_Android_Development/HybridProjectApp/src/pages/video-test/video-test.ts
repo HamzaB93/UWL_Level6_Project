@@ -15,14 +15,16 @@ import { VideoPlayer } from 'ionic-native';
 export class VideoTestPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
-    // Playing a video.
-    //  VideoPlayer.play("file:///src/assets/vid/guardians.mp4").then(() => {
-    //    console.log('video completed');
-    //  }).catch(err => {
-    //    console.log(err);
-    //  });
-    VideoPlayer.play("src/assets/vid/guardians.mp4");
 
+  }
+
+  playTrailer(){
+    // Playing a video.
+    VideoPlayer.play("src/assets/vid/guardians.mp4").then(() => {
+      console.log('video completed');
+      }).catch(err => {
+        console.log(err);
+    });
   }
 
   ionViewDidLoad() {
