@@ -30,12 +30,8 @@ public class MainActivity extends AppCompatActivity {
                     Intent intent = new Intent (MainActivity.this, PreCycleTestActivity.class);
                     startActivity(intent);
                 }
-                if (position == 2) {
-                    Intent intent = new Intent (MainActivity.this, PreScrollTestActivity.class);
-                    startActivity(intent);
-                }
-                if (position == 3) {
-                    Intent intent = new Intent (MainActivity.this, PreFlashTestActivity.class);
+                if(position == 2) {
+                    Intent intent = new Intent (MainActivity.this, PreVideoTestActivity.class);
                     startActivity(intent);
                 }
             }
