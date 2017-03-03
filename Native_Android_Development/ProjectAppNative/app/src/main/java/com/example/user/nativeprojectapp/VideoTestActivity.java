@@ -22,7 +22,7 @@ public class VideoTestActivity extends AppCompatActivity {
 
         VideoView video = (VideoView) findViewById(R.id.videoView);
 
-        Uri uri = Uri.parse("a");
+        Uri uri = Uri.parse("android.resource://"+getPackageName()+"/"+R.raw.guardians);
         video.setVideoURI(uri);
         video.start();
 

@@ -18,7 +18,7 @@ public class PreVideoTestActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
     }
 
-    public void onClickVideoTestStart() {
+    public void onClickVideoTestStart(View v) {
         Intent intent = new Intent (PreVideoTestActivity.this, VideoTestActivity.class);
         startActivity(intent);
     }
