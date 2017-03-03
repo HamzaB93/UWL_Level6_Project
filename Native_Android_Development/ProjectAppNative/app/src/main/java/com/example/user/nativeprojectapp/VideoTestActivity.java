@@ -7,6 +7,7 @@ import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
+import android.widget.MediaController;
 import android.widget.VideoView;
 
 import java.net.URL;
@@ -24,6 +25,7 @@ public class VideoTestActivity extends AppCompatActivity {
 
         Uri uri = Uri.parse("android.resource://"+getPackageName()+"/"+R.raw.guardians);
         video.setVideoURI(uri);
+        video.setMediaController(new MediaController(this));
         video.start();
 
     }
