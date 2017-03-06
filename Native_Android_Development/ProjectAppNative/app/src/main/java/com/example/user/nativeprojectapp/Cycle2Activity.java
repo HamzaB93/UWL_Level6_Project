@@ -26,7 +26,7 @@ public class Cycle2Activity extends AppCompatActivity {
                 Intent intent = new Intent(Cycle2Activity.this, Cycle3Activity.class);
                 startActivity(intent);
             }
-        }, 10);
+        }, 350);
     }
 
 }

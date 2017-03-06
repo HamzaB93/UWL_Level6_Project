@@ -48,16 +48,16 @@ public class ImageTestActivity extends AppCompatActivity {
             linearLayout.addView(imageView);
             // make visible to program
             setContentView(linearLayout);
-
-            Handler handler = new Handler();
-
-            handler.postDelayed(new Runnable() {
-                @Override
-                public void run() {
-                    Intent intent = new Intent(ImageTestActivity.this, PreImageTestActivity.class);
-                    startActivity(intent);
-            }
-            }, 3000);
+//
+//            Handler handler = new Handler();
+//
+//            handler.postDelayed(new Runnable() {
+//                @Override
+//                public void run() {
+//                    Intent intent = new Intent(ImageTestActivity.this, PreImageTestActivity.class);
+//                    startActivity(intent);
+//            }
+//            }, 3000);
         }
     }
 }

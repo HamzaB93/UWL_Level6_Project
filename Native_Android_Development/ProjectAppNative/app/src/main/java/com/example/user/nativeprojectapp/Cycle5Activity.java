@@ -26,6 +26,6 @@ public class Cycle5Activity extends AppCompatActivity {
                 Intent intent = new Intent(Cycle5Activity.this, PreCycleTestActivity.class);
                 startActivity(intent);
             }
-        }, 10);
+        }, 350);
     }
 }

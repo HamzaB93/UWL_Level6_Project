@@ -16,16 +16,16 @@
     <string name="start_test_button">Start</string>
 
     <!-- PreImageTestActivty -->
-    <string name="title_activity_pre_image_test">PreImageTestActivity</string>
-    <string name="pre_image_test">Info will go here</string>
+    <string name="title_activity_pre_image_test">PreImageTest</string>
+    <string name="pre_image_test">Test will generate image</string>
 
     <!-- ImageTest activity strings -->
-    <string name="title_activity_image_test">ImageTestActivity</string>
-    <string name="image_welcome">Here we will do some funky stuff with an image</string>
+    <string name="title_activity_image_test">ImageTest</string>
+
 
     <!-- Pre cycle test -->
-    <string name="title_activity_pre_cycle_test">PreCycleTestActivity</string>
-    <string name="pre_cycle_test">Info will go here</string>
+    <string name="title_activity_pre_cycle_test">PreActivityTest</string>
+    <string name="pre_cycle_test">Test will generate many activties</string>
 
     <!-- Cycle Test-->
     <string name="cycle_text">Cycling</string>
@@ -36,8 +36,10 @@
     <string name="title_activity_cycle5">Cycle5Activity</string>
 
     <!-- Pre video test -->
-    <string name="title_activity_pre_video">PreVideoActivity</string>
-    <string name="pre_video_test">Info will go here</string>
-    <string name="title_activity_video_test">VideoTestActivity</string>
+    <string name="title_activity_pre_video">PreVideoTest</string>
+    <string name="pre_video_test">Test will play video</string>
+
+    <!-- Video Test -->
+    <string name="title_activity_video_test">VideoTest</string>
 
 </resources>

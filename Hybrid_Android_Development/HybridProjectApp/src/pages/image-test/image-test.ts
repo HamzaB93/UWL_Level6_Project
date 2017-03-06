@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
+import { PreImageTestPage } from '../pre-image-test/pre-image-test';
 
 /*
   Generated class for the ImageTest page.
@@ -15,6 +16,7 @@ export class ImageTestPage {
 
   //androidImg = document.getElementById("androidImage") as HTMLImageElement;
   document: any;
+
   constructor(public navCtrl: NavController, public navParams: NavParams) {
     //androidImg.src = "assets/img/android_logo";
 
@@ -25,7 +27,7 @@ export class ImageTestPage {
     // document.body.appendChild(img);
     // this.androidIm = document.getElementById("androidLogo") as HTMLImageElement;
     // this.androidIm.src="data:assets/img/android_logo.png";
-    
+
   }
 
   loadImage() {
