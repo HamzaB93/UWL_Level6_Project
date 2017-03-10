@@ -6,6 +6,7 @@ import { NavController } from 'ionic-angular';
 import { PreImageTestPage } from '../pre-image-test/pre-image-test';
 import { PreActivityTestPage } from '../pre-activity-test/pre-activity-test';
 import { PreVideoTestPage } from '../pre-video-test/pre-video-test';
+import { PreGuiComponentTestPage } from '../pre-gui-component-test/pre-gui-component-test';
 
 @Component({
   selector: 'page-home',
@@ -22,6 +23,7 @@ options: any;
       {name: "Image test", id: 1},
       {name: "Activity Cycle test ", id: 2},
       {name: "Video test", id: 3},
+      {name: "Gui Component test", id: 4},
     ];
     }
 
@@ -34,6 +36,9 @@ options: any;
       }
       else if(i == 2){
         this.navCtrl.push(PreVideoTestPage);
+      }
+      else if(i == 3){
+        this.navCtrl.push(PreGuiComponentTestPage);
       }
   }
 }

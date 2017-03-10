@@ -17,6 +17,9 @@ import { Cycle5ActivityPage } from '../pages/cycle5-activity/cycle5-activity';
 import { PreVideoTestPage } from '../pages/pre-video-test/pre-video-test';
 import { VideoTestPage } from '../pages/video-test/video-test';
 
+import { PreGuiComponentTestPage } from '../pages/pre-gui-component-test/pre-gui-component-test';
+import { GuiComponentTestPage } from '../pages/gui-component-test/gui-component-test';
+
 @NgModule({
   declarations: [
     MyApp,
@@ -30,7 +33,9 @@ import { VideoTestPage } from '../pages/video-test/video-test';
     Cycle4ActivityPage,
     Cycle5ActivityPage,
     PreVideoTestPage,
-    VideoTestPage
+    VideoTestPage,
+    PreGuiComponentTestPage,
+    GuiComponentTestPage
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -48,7 +53,9 @@ import { VideoTestPage } from '../pages/video-test/video-test';
     Cycle4ActivityPage,
     Cycle5ActivityPage,
     PreVideoTestPage,
-    VideoTestPage
+    VideoTestPage,
+    PreGuiComponentTestPage,
+    GuiComponentTestPage
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]
 })
