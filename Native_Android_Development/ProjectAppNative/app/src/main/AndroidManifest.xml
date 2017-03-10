@@ -57,6 +57,14 @@
         <activity
             android:name=".VideoTestActivity"
             android:label="@string/title_activity_video_test"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".PreGuiComonentTestActivity"
+            android:label="@string/title_activity_pre_gui_comonent"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".GuiComonentTestActivity"
+            android:label="@string/title_activity_gui_comonent_test"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 

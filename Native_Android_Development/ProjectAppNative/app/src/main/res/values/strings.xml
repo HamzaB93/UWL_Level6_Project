@@ -11,6 +11,7 @@
         <item>Image test</item>
         <item>Activity Cycle test</item>
         <item>Video test</item>
+        <item>GUI Component test</item>
     </string-array>
 
     <string name="start_test_button">Start</string>
@@ -41,5 +42,16 @@
 
     <!-- Video Test -->
     <string name="title_activity_video_test">VideoTest</string>
+
+    <!-- Pre Gui test -->
+    <string name="title_activity_pre_gui_comonent">PreGuiComonentActivity</string>
+    <string name="pre_gui_test">Test will load many GUI components on the page</string>
+
+    <!-- GUI test -->
+    <string name="title_activity_gui_comonent_test">GuiComonentTestActivity</string>
+    <string-array name="gui">
+        <item>Ran</item>
+        <item>Dom</item>
+    </string-array>
 
 </resources>
