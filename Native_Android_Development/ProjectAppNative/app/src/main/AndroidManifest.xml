@@ -65,7 +65,8 @@
         <activity
             android:name=".GuiComonentTestActivity"
             android:label="@string/title_activity_gui_comonent_test"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden"></activity>
     </application>
 
 </manifest>
