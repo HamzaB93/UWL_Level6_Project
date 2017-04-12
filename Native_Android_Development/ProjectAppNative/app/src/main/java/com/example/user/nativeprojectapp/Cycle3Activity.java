@@ -18,15 +18,10 @@ public class Cycle3Activity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        Handler handler = new Handler();
 
-        handler.postDelayed(new Runnable() {
-            @Override
-            public void run() {
-                Intent intent = new Intent(Cycle3Activity.this, Cycle4Activity.class);
-                startActivity(intent);
-            }
-        }, 350);
+        Intent intent = new Intent(Cycle3Activity.this, Cycle4Activity.class);
+        startActivity(intent);
+
     }
 
 }

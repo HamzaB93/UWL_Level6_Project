@@ -17,16 +17,10 @@ public class Cycle1Activity extends AppCompatActivity {
         setContentView(R.layout.activity_cycle1);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        
+        Intent intent = new Intent(Cycle1Activity.this, Cycle2Activity.class);
+        startActivity(intent);
 
-        Handler handler = new Handler();
-
-        handler.postDelayed(new Runnable() {
-            @Override
-            public void run() {
-                Intent intent = new Intent(Cycle1Activity.this, Cycle2Activity.class);
-                startActivity(intent);
-            }
-        }, 350);
     }
 
 }
